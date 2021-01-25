@@ -67,8 +67,13 @@ async function getPokemonMoves(pokeData, pokeAttacks) {
             const { accuracy } = res;
             const { power } = res;
 
-            accDetail = attackDetailTemplate(accuracy, "accuracy", div, i);
-            powerDetail = attackDetailTemplate(power, "power", div, i);
+            const accDetail = attackDetailTemplate(
+                accuracy,
+                "accuracy",
+                div,
+                i
+            );
+            const powerDetail = attackDetailTemplate(power, "power", div, i);
             currentAttackDetailsIds.push(accDetail.id, powerDetail.id);
         }
     }
