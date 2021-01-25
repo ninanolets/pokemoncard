@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <link rel="stylesheet" href="../src/style.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Pokémon Cards</title>
+    </head>
+    <body>
+        <div class="card-config">
+            <div class="card">
+                <div class="navigation">
+                    <div class="navigation__searchbar">
+                        <input
+                            class="navigation__input"
+                            type="text"
+                            placeholder="Name or numberID"
+                        />
+                        <button class="btn btn-nav" type="button">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <main>
+                    <section class="section-about hidden">
+                        <div class="about__avatar"></div>
+                        <div>
+                            <div class="about__title"></div>
+                            <div id="details"></div>
+                        </div>
+                        <div class="attacks"></div>
+                        <div class="attacks"></div>
+                    </section>
+                </main>
+                <footer>
+                    <div class="footer hidden">
+                        <div id="footer">
+                            <a class="footer__previous" id="prev"></a>
+                            <div class="footer__current">
+                                <div id="curr-id"></div>
+                                <div id="curr-name"></div>
+                            </div>
+                            <a class="footer__next" id="next"></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="../src/fetch.js"></script>
+        <script src="../src/helpers.js"></script>
+        <script src="../src/heading.js"></script>
+        <script src="../src/attacks.js"></script>
+        <script src="../src/footer.js"></script>
+        <script src="../src/setPokemon.js"></script>
+        <script src="../src/getPokemon.js"></script>
+        <script src="../src/index.js"></script>
+    </body>
+</html>

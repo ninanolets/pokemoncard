@@ -1,0 +1,238 @@
+/* 
+Navbar blue: #487E95
+Image background blue: #226898
+Attacks blue: #1A4569
+Attacks detail blue: #015CB4
+
+Power list green: #12D3AE
+Background yellow: #D9DAAD
+Input yellow: #F4F5D8
+*/
+
+/* BASIC SETUP */
+/* Reset config */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #444;
+    font-size: 18px;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+/* CARD CONFIG */
+.card-config {
+    position: relative;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #d9daad;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 350px;
+
+    border-radius: 5px;
+    height: 95vh;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* NAVIGATION */
+.navigation {
+    background-color: #487e95;
+    border-radius: 5px 5px 0 0;
+    padding: 20px 0;
+}
+
+.navigation__searchbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__input {
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    width: 45%;
+    text-align: center;
+    margin-right: 10px;
+
+    background-color: #f4f5d8;
+    outline-color: #d9daad;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 3px;
+    padding: 7px 10px;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #386a93;
+    transform: scale(1.1);
+}
+
+.btn-nav {
+    background-color: #fff;
+    color: #143957;
+    outline: none;
+    border: 1.5px solid #386a93;
+}
+
+/* MAIN */
+main {
+    text-align: center;
+
+    position: relative;
+}
+
+.section-about {
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.about__avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rosybrown;
+    border: 5px solid #eee;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.central-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about__title {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.about__detail {
+    background-color: #12d3ae;
+    border-radius: 2px;
+    font-size: small;
+    width: fit-content;
+    padding: 1px 3px;
+    font-weight: 400;
+    margin: 0 auto;
+
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.about__attacks,
+.about__attacks-detail {
+    color: #eee;
+    line-height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.about__attacks {
+    background-color: #1a4569;
+    font-size: 70%;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.about__attacks-detail {
+    background-color: #015cb4;
+    border: none;
+}
+
+.about__attacks-last {
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.9);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #487e95;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 0 0 5px 5px;
+}
+
+#footer {
+    padding: 20px 0;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__previous,
+.footer__next {
+    background-color: #3997c0;
+    color: #eee;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: small;
+
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.footer__previous:hover,
+.footer__next:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer__previous {
+    margin-left: 15px;
+}
+
+.footer__current {
+    text-align: center;
+    color: #eee;
+}
+
+#curr-name {
+    font-weight: 500;
+}
+
+.footer__next {
+    margin-right: 15px;
+}
